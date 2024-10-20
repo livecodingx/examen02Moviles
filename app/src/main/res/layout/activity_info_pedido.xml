@@ -9,7 +9,6 @@
     tools:context=".InfoPedidoActivity"
     android:padding="16dp">
 
-    <!-- Ícono y Nombre Cliente -->
     <ImageView
         android:id="@+id/iconNombreCliente"
         android:layout_width="24dp"
@@ -52,7 +51,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_shopping_cart"
+        android:src="@drawable/ic_producto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iconNumeroCliente"
         android:layout_marginTop="16dp" />
@@ -71,7 +70,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_location_city"
+        android:src="@drawable/ic_mapa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iconProductos"
         android:layout_marginTop="16dp" />
@@ -90,7 +89,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_location_on"
+        android:src="@drawable/ic_lugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iconCiudad"
         android:layout_marginTop="16dp" />
