@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoPedidoActivity"
+    android:padding="16dp">
+
+    <!-- Ícono y Nombre Cliente -->
+    <ImageView
+        android:id="@+id/iconNombreCliente"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombreCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Cliente"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iconNombreCliente"
+        app:layout_constraintTop_toTopOf="@+id/iconNombreCliente" />
+
+    <ImageView
+        android:id="@+id/iconNumeroCliente"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconNombreCliente"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtNumeroCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número Cliente"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iconNumeroCliente"
+        app:layout_constraintTop_toTopOf="@+id/iconNumeroCliente" />
+
+    <ImageView
+        android:id="@+id/iconProductos"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_shopping_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconNumeroCliente"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iconProductos"
+        app:layout_constraintTop_toTopOf="@+id/iconProductos" />
+
+    <ImageView
+        android:id="@+id/iconCiudad"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_location_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconProductos"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iconCiudad"
+        app:layout_constraintTop_toTopOf="@+id/iconCiudad" />
+
+    <ImageView
+        android:id="@+id/iconDireccion"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_location_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconCiudad"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/iconDireccion"
+        app:layout_constraintTop_toTopOf="@+id/iconDireccion" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnLlamar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Llamar" />
+
+        <Button
+            android:id="@+id/btnWsp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WhatsApp" />
+
+        <Button
+            android:id="@+id/btnMaps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Maps" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
